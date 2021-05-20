@@ -7,7 +7,7 @@ services:
     volumes:
       - "/febs/log:/log"
     command:
-      - "--nacos.url=127.0.0.1"
+      - "--nacos.url=121.4.17.171"
     environment:
       - "TZ=Asia/Shanghai"
     ports:
@@ -19,11 +19,11 @@ services:
     volumes:
       - "/febs/log:/log"
     command:
-      - "--febs-admin=127.0.0.1"
-      - "--mongo.url=127.0.0.1"
-      - "--nacos.url=127.0.0.1"
-      - "--redis.url=127.0.0.1"
-      - "--logstash.url=127.0.0.1"
+      - "--febs-admin=192.168.33.10"
+      - "--mongo.url=121.4.17.171"
+      - "--nacos.url=121.4.17.171"
+      - "--redis.url=121.4.17.171"
+      - "--logstash.url=121.4.17.171"
     environment:
       - "TZ=Asia/Shanghai"
     ports:
