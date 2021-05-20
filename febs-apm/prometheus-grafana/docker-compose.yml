@@ -14,22 +14,6 @@ services:
     container_name: node_exporter
     ports:
       - 8405:9100
-  redis_exporter:
-    image: oliver006/redis_exporter
-    container_name: redis_exporter
-    command:
-      - '--redis.addr=redis://ip:port'
-      - '--redis.password=password'
-    ports:
-      - 8408:9121
-    restart: on-failure
-  mysql_exporter:
-    image: prom/mysqld-exporter
-    container_name: mysql_exporter
-    environment:
-      - DATA_SOURCE_NAME=username:password@(ip:port)/
-    ports:
-      - 8409:9104
   cadvisor:
     image: google/cadvisor
     container_name: cadvisor

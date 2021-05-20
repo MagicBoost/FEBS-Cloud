@@ -35,11 +35,11 @@ services:
     volumes:
       - "/febs/log:/log"
     command:
-      - "--febs-admin=127.0.0.1"
-      - "--nacos.url=127.0.0.1"
-      - "--mysql.url=127.0.0.1"
-      - "--redis.url=127.0.0.1"
-      - "--logstash.url=127.0.0.1"
+      - "--febs-admin=192.168.33.10"
+      - "--nacos.url=121.4.17.171"
+      - "--mysql.url=121.4.17.171"
+      - "--redis.url=121.4.17.171"
+      - "--logstash.url=121.4.17.171"
     environment:
       - "TZ=Asia/Shanghai"
     ports:
@@ -51,12 +51,12 @@ services:
     volumes:
       - "/febs/log:/log"
     command:
-      - "--febs-admin=127.0.0.1"
-      - "--febs-gateway=127.0.0.1"
-      - "--nacos.url=127.0.0.1"
-      - "--mysql.url=127.0.0.1"
-      - "--febs-tx-manager=127.0.0.1"
-      - "--logstash.url=127.0.0.1"
+      - "--febs-admin=192.168.33.10"
+      - "--febs-gateway=192.168.33.10"
+      - "--nacos.url=121.4.17.171"
+      - "--mysql.url=121.4.17.171"
+      - "--febs-tx-manager=192.168.33.10"
+      - "--logstash.url=121.4.17.171"
     environment:
       - "TZ=Asia/Shanghai"
     ports:
@@ -70,12 +70,12 @@ services:
     volumes:
       - "/febs/log:/log"
     command:
-      - "--nacos.url=127.0.0.1"
-      - "--febs-admin=127.0.0.1"
-      - "--mysql.url=127.0.0.1"
-      - "--febs-tx-manager=127.0.0.1"
-      - "--febs-gateway=127.0.0.1"
-      - "--logstash.url=127.0.0.1"
+      - "--nacos.url=121.4.17.171"
+      - "--febs-admin=192.168.33.10"
+      - "--mysql.url=121.4.17.171"
+      - "--febs-tx-manager=192.168.33.10"
+      - "--febs-gateway=192.168.33.10"
+      - "--logstash.url=121.4.17.171"
     environment:
       - "TZ=Asia/Shanghai"
     ports:
@@ -89,11 +89,11 @@ services:
     volumes:
       - "/febs/log:/log"
     command:
-      - "--nacos.url=127.0.0.1"
-      - "--febs-admin=127.0.0.1"
-      - "--mysql.url=127.0.0.1"
-      - "--febs-gateway=127.0.0.1"
-      - "--logstash.url=127.0.0.1"
+      - "--nacos.url=121.4.17.171"
+      - "--febs-admin=192.168.33.10"
+      - "--mysql.url=121.4.17.171"
+      - "--febs-gateway=192.168.33.10"
+      - "--logstash.url=121.4.17.171"
     environment:
       - "TZ=Asia/Shanghai"
     ports:
@@ -105,11 +105,11 @@ services:
     volumes:
       - "/febs/log:/log"
     command:
-      - "--nacos.url=127.0.0.1"
-      - "--febs-admin=127.0.0.1"
-      - "--mysql.url=127.0.0.1"
-      - "--febs-gateway=127.0.0.1"
-      - "--logstash.url=127.0.0.1"
+      - "--nacos.url=121.4.17.171"
+      - "--febs-admin=192.168.33.10"
+      - "--mysql.url=121.4.17.171"
+      - "--febs-gateway=192.168.33.10"
+      - "--logstash.url=121.4.17.171"
     environment:
       - "TZ=Asia/Shanghai"
     ports:
@@ -121,10 +121,10 @@ services:
     volumes:
       - "/febs/log:/log"
     command:
-      - "--nacos.url=127.0.0.1"
-      - "--febs-admin=127.0.0.1"
-      - "--mysql.url=127.0.0.1"
-      - "--redis.url=127.0.0.1"
+      - "--nacos.url=121.4.17.171"
+      - "--febs-admin=192.168.33.10"
+      - "--mysql.url=121.4.17.171"
+      - "--redis.url=121.4.17.171"
     environment:
       - "TZ=Asia/Shanghai"
     ports:
